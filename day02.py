@@ -3,6 +3,7 @@
 from collections import Counter
 from functools import reduce
 from math import prod
+from operator import or_
 
 from more_itertools import chunked
 
@@ -39,7 +40,7 @@ def id_sum(c: list[Counter]) -> int:
 # Part B
 
 def power_sum(c: list[Counter]) -> int:
-    return sum(prod(reduce(lambda a, b: a | b, game).values()) for game in c)
+    return sum(prod(reduce(or_, game).values()) for game in c)
 
 # Print Results
 
