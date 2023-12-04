@@ -1,5 +1,5 @@
 # <p align="center">Advent of Code 2023</p>
-### Video Solutions by Me
+### Solutions
 
 1. BQN
 2. APL
