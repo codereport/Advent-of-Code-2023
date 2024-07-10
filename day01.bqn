@@ -1,11 +1,12 @@
+# Get Data
+data ← •file.Lines "data/01.txt"
 
 # Part A
-data ← •file.Lines "../Advent-of-Code-2023/data/01.txt"
-
-Nums ← +´(•BQN ⊑∾(⊑⌽))¨∊⟜"0123456789"⊸/ 
-Nums ¨ data
+Nums ← +´(•BQN·(⊑∾⊑∘⌽)∊⟜"0123456789"⊸/)¨
 
 # Part B
+# Translate ← # this is non-trivial maybe do later
 
-Translate ← # this is non-trivial maybe do later
-Nums ∘ Translate ¨ data
+# Print Results
+•Show Nums data
+# •Show Numes Translate data # TODO
